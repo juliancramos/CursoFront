@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Para caracteres especiales -->
+    <meta charset="UTF-8">
+    <!-- Para que sea adaptable a computador, cel, etc. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina web</title>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, pariatur.</p>
+    <p>Algunos estilos
+        <br>
+        <!-- //Exponente -->
+        log<sub>10</sub>  
+        <br>
+        <!-- Hacia abajo -->
+        2 <sup>10</sup>
+    </p>
+    <a href="http://www.youtube.com">Youtube</a>
+    <br>
+    <!-- Lo abre en una nueva pestaña -->
+    <a href="http://www.youtube.com" target="_blank" >Youtube</a>
+    <br>
+    <a href="hola.html" target="_blank" >Hola</a>
+    <br>
+    <!-- Alt por si no carga, aparece ese mensaje, title para cuando se para encima -->
+    <img src="simon.png" alt="Simon-Alvin y las ardillas" title="Simon-Alvin y las ardillas">
+    <br>
+    <!-- Imagen con enlace para que al tocar la  direccione -->
+    <a href="https://www.disneyplus.com/es-us" target="_blank" >
+        <img src="simon.png" alt="">
+    </a>
+    <!-- tr filas, td columnas, th para cabezera -->
+    <table>
+        <tr>
+            <th>Nombre</th>
+            <th>Teléfono</th>
+        </tr>
+        <tr>
+            <td>Julian</td>
+            <td>302...</td>
+        </tr>
+    </table>
+    <br>
+    <!-- name es para que quede en variables, luego eso se puede manejar con javascript -->
+
+     <h2>Formularios</h2>
+    <form action="archivo.php">
+        <!-- Autofocus para que comience ahí, placeholder para que se vea sombreado en la casilla -->
+        <input type="text" placeholder="Nombre:" maxlength="10" required name="Nombre" autofocus> 
+        <input type="email" placeholder="Correo:" maxlength="20" required name="Email">
+        <input type="password" placeholder="Contraseña:" maxlength="10" required name="Contra">
+        <input type="text" disabled>
+        <input type="text" readonly>
+        <br>
+        <textarea name="Mensaje" id=""></textarea>
+        <br>
+        <select name="pais" id="pais">
+            <option value="Colombia">Colombia</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Brasil">Brasil</option>
+        </select>
+        <br>
+        <!-- El name debe ser el mismo para que si activo una opción se desactive la otra -->
+        <input type="radio" name="Genero" id="hombre" value="hombre">
+        <!-- El label es para que si pincho sobre el texto se seleccione la opción -->
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="Genero" id="mujer" value="mujer">Mujer
+        <br>
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos">Terminos y condiciones</label>
+        <br>
+        <input type="number" min="5" max="10" placeholder="Num:">
+        <br>
+        <input type="range" min="0" max="10" placeholder="rango">
+        <br>
+        <input type="file" name="" id="">
+        <br>
+        <input type="datetime-local" name="" id="">
+        <br>
+        <input type="tel" name="" id="">
+        <br>
+        <input list="curso">
+        <datalist id="curso">
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="react">react</option>
+        </datalist>
+        <br>
+        <!-- value para cambiar el texto -->
+        <input type="submit" value="ok">
+        <br>
+    </form>
+    <!-- Separar -->
+    <hr>
+    <blockquote>Esto es para citar</blockquote>
+    <!-- Tambien cite para citar -->
+    <p>Lorem ipsum dolor sit amet consectetur <cite>adipisicing elit</cite>. Sunt iusto itaque dolores dignissimos, deserunt velit.</p>
+
+</body>
+</html>

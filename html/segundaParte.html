@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esta es la segunda parte</title>
+    <!-- Para cambiar la imagen de la pestaña ver parte del video donde explica favIcon generator -->
+</head>
+<body>
+    <!-- Las clases se pueden repetir, los id no. Una etiqueta puede tener varias clases -->
+     <p class = "clase1 clase 2 etc" id = "1">Hola mundo</p>
+     <p class = "clase 1" id = "2">Hola mundo</p>
+
+     <audio src="Ruta del audio" controls>Cancion</audio>
+     <br>
+     <video src="url" controls></video>
+
+    
+<!-- Los Elementos Semanticos son aquellos que definen cual es el contenido que tendran dentro, y le sirven a los buscadores y navegadores Web --> 
+<!-- <1-- Los. Elementos NO Semanticos son los que no definen cual sera el contenido que tiene dentro -->| 
+<!-- <div> Sirven de contenedor para cualquier elemento, NO tiene sentido semantico -->
+<!-- <header> Nos permite establecer el encabezado de nuestra pagina Web -->
+<!-- <nav> Nos permite definir un conjunto de enlaces de navegacion -->
+<!-- <section> Define una seccion en un documento que puede contener un grupo de contenido --> 
+ <!-- <article> Define un articulo  -->
+<!-- <aside> Nos permite definir un area con contenido independiente al principal, como el sidebar --> <!-- <footer> Nos permite establecer el pie de pagina de un documento -->
+
+<!-- Asi se hacía antes, ya no mucho. Comando rapido es .nombreClase -->
+    <div class="header">
+        <div class="nav">
+            <a href="">Inicio</a>
+            <a href="">Inicio</a>
+            <a href="">Inicio</a>
+            <a href="">Inicio</a>
+        </div>
+     </div>
+     <br>
+     <!-- Asi seria ahora: -->
+     <header>
+        <nav>
+            <a href="Inicio"></a>
+            <a href="Inicio"></a>
+            <a href="Inicio"></a>
+            <a href="Inicio"></a>
+        </nav>
+     </header>
+     <h3>Se debería conformar de la siguiente manera: </h3>
+     <img src="ElementosSemanticos.png" alt="Elementos Semánticos" title="Elementos Semánticos">
+     <br><br>
+     <!-- Una pagina web dentro de la pagina Web (no es tan legal dependiendo de la página)-->
+      <h3>Página de flexboxfroggy</h3>
+     <iframe src="https://flexboxfroggy.com/" frameborder="0" width="1000" height="500"></iframe>
+
+
+     <h3>Video de Youtube</h3>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/EIqdDpgju0I?si=hpqoSVkSTE12G5kc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <!-- Codigo de javascript -->
+     <script>
+        alert("Hola Mundo");
+     </script>
+     <!-- Permite tirar mensaje si el usuario desactivó función de javascript -->
+     <noscript>
+        <p>Activar javascript</p>
+     </noscript>
+</body>
+</html>

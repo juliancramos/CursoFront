@@ -1,4 +1,8 @@
 
+
+/* Los selectores tienen jerquía: */
+/* Primero el id, luego clase, luego etiquetas */
+
 /* * Es selector universal, osea que aplica para todo */
 * {
     color:blue;
@@ -15,3 +19,15 @@ h2, h3{
 div p{
     color: purple;
 }
+
+/* Selector de clase, para acceder se usa .NombreClase */
+.grey{
+    color:grey;
+    font-size: 20px; /*Tam de la letra*/
+}
+/* Selector de id,para acceder se usa #NombreId */
+#enlace{
+    color:blue;
+    font-size: 40px;
+}
+

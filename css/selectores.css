@@ -1,0 +1,17 @@
+
+/* * Es selector universal, osea que aplica para todo */
+* {
+    color:blue;
+}
+/* Selector por etiqueta. Se puede a uno o varios */
+h1 {
+    color: red;
+}
+h2, h3{
+    color: green;
+}
+
+/* Selector descendiente  */
+div p{
+    color: purple;
+}

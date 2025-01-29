@@ -3,7 +3,7 @@
 /* Los selectores tienen jerquía: */
 /* Primero el id, luego clase, luego etiquetas */
 
-/* * Es selector universal, osea que aplica para todo */
+/* El * es selector universal, osea que aplica para todo */
 * {
     color:blue;
 }
@@ -29,5 +29,22 @@ div p{
 #enlace{
     color:blue;
     font-size: 40px;
+}
+
+/* Selector de hijo directo (p hijo directo de div) */
+div > p{
+    color:aqua;
+}
+
+/* Tambien hay selector de atributos
+Esto quiere decir que tambien se podran seleccionar inputs */
+
+input{
+    color:rebeccapurple;
+}
+/* Tambien se puede a un tipo en específico */
+/* (El espacio despues del input importa) */
+input[type = "password"]{
+    color:red;
 }
 

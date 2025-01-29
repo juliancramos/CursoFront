@@ -1,0 +1,32 @@
+/* Tambien se puede cambiar todo el fondo */
+body{
+    /* Cargar imagen */
+    background: url(CSS-Logo.jpg);
+    /* Configurar su tamaño */
+    background-size: 700px;
+    /* Para que no se repita (por defecto está en repeat */
+    background-repeat: no-repeat;
+    /* Tambien se puede que se repita solo en x o en y
+    background-repeat: repeat-y; */
+
+    /* Scroll (por defecto) : la imagen se queda ahí
+    Fixed: la imagen se mantiene asi se baje */
+    background-attachment: fixed;
+
+    background-position: 300px;
+}
+
+
+/* De forma resumida: */
+body{
+    background: #B6D0E2 url(CSS-Logo.jpg) no-repeat fixed center center ;
+    background-size: 700px;
+  
+}
+
+.fondo{
+    background: red url(perro\ en\ nieve.jpg) no-repeat fixed ;
+    width: 600px;
+    height: 600px;
+    background-size: 300px;
+}

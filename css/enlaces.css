@@ -1,0 +1,23 @@
+a{
+    color: blue;
+    font-size: 20px;
+    /* Esto es para quitar la linea en la parte de abajo (hay mas opciones) */
+    text-decoration: none;
+}
+/* Se pueden aplicar mas estilos con una super clase */
+/* Al poner el mouse encima */
+a:hover{
+    background: rgb(230, 105, 105);
+    color: white;
+    text-decoration: underline;
+}
+/* Enlaces visitados */
+a:visited{
+    color:red;
+    
+}
+/* Al tenerlo presionado */
+a:active{
+    color:chartreuse;
+    font-size: 25px;
+}

@@ -1,0 +1,33 @@
+.caja{
+    background: rgb(18, 18, 119);
+    width: 200px;
+    height: 200px;
+    color: white;
+    font-size: 50px;
+    margin: 10px;
+    padding: 10px;
+    /* Para ponerlas al lado en vez de vertical */
+    /* display: inline-block; */
+    /* Para ordenar de derecha a izq */
+    /* float: right; */
+}
+
+
+/* Por defecto viene static */
+/* Relative permite mover respecto a su lugar original */
+/* Absolute mueve respecto a su contenedor padre y el resto de elementos ignoran la nueva posicion */
+/* Fixed: la posicion respecto a la pantalla del usuario siempre será la misma */
+/* Float permite desplazar todo lo posible a der o izq */
+.posicionada{
+    background: rgb(64, 64, 255);
+    position: absolute;
+    top: 100px;
+    left:100px;
+}
+/* PARA QUE SIRVA EL ABSOLUTE DEL CONTENEDOR HIJO, EL CONTENEDOR PADRE TIENE QUE ESTAR EN RELATIVE */
+.contenedor-padre{
+    position: relative;
+    background: rgb(131, 3, 131);
+    width: 400px;
+    height: 400px;
+}

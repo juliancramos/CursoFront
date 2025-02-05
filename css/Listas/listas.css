@@ -1,0 +1,26 @@
+
+/* Para borrar viñetas */
+ol,ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* Graficos: 
+none,disc,circle,square
+
+Numericos:
+decimal, decimal-leading-zeo, lower-roman, upper-roman, lower-latin,etc */
+
+/* ol{
+    list-style: decimal-leading-zero;
+}
+
+ul{
+    list-style: circle;
+} */
+
+
+/* TAMBIEN SE PUEDE UNA IMAGEN EN ESPECIFICO */
+    /* ul{
+        list-style-image: url(/imagenes/CSS-Logo.jpg);
+    } */

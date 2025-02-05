@@ -14,14 +14,16 @@ body{
 }
 .contenedor{
     margin: 20px auto;
-    width: 1000px;
+    /* width: 1000px; */
+    max-width: 1000px;
+    width: 90%;
 }
 /* Menu de navegacion */
 header{
-    background: #5f5f5f;
+    background: white;
 }
 header nav ul{
-    width: 100%;
+    width: 90%;
     list-style: none;
     /* Si el contenido se desborda del contenedor, lo aculta */
     overflow: hidden;
@@ -44,7 +46,9 @@ header nav ul li a:hover{
 /* Main */
 .main{
     background: white;
-    width: 700px;
+    /* width: 700px; */
+    width: 70%;
+    max-width: 700px;
     /* Esto hace que se situe a la izq y por lo tanto el aside
     pasa de estar abajo a estar en la derecha */
     float: left;
@@ -72,7 +76,8 @@ header nav ul li a:hover{
 }
 aside{
     /* Dado que el contenedor es de 1000 y el main de 700 */
-    width: 300px;
+    /* width: 300px; */
+    width: 30%;
     background: #161f26;
     padding: 20px;
     /* Para que se coloque a la derecha */
@@ -110,11 +115,26 @@ aside .widget p{
 }
 
 footer{
-    width: 700px;
+    /* width: 700px; */
+    width: 70%;
+    max-width: 700px;
     /* Para que se vaya para abajo */
     clear:both;
     background: black;
     color: white;
     padding: 15px 0;
     text-align: center;
+}
+
+/* Mediaqueries */
+@media screen and (max-width:800px) {
+    .main{
+        width: 100%;
+    }
+    aside{
+        width: 100%;
+    }
+    footer{
+        width: 100%;
+    }
 }

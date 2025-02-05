@@ -1,0 +1,43 @@
+
+body{
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div{
+    margin: 20px 0;
+}
+
+.boton{
+    background: rgb(126, 58, 189);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+.boton:hover{
+    opacity: .8;
+}
+
+.border{
+    /* Entre mas alto el valor, mas redondeado */
+    border-radius: 100px;
+}
+
+.boton2{
+    background: rgb(32, 32, 221);
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: inline-block;
+    margin: 0px 10px;
+}
+.boton2:hover{
+    opacity: .8;
+}
+.border2{
+    border-radius: 5px 10px 15px 20px;
+}

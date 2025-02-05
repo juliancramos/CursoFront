@@ -1,0 +1,24 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table,td,th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    width: 500px;
+    text-align: 500px;
+}
+
+th,td{
+    padding: 10px 20px;
+    text-align: center;
+}
+th{
+    background: #0090dc;
+    color:white
+}
+tr:hover{
+    background: #e5e5e5;
+}

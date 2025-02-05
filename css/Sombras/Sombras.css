@@ -1,0 +1,18 @@
+h1{
+    /* Primera coordenada es sombra hacia la derecha
+    Segunda hacia abajo
+    Tercera para la intensidad de la sombra */
+    text-shadow: 10px 10px 10px;
+}
+
+h2{
+    color: white;
+    text-shadow: 2px 0px 10px blue;
+}
+
+.caja{
+    width: 200px;
+    height: 200px;
+    background: greenyellow;
+    box-shadow: 5px 5px 10px rgb(0, 100, 0);
+}

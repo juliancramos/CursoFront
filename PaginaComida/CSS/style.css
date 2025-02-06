@@ -28,7 +28,7 @@
     /* Color de fondo */
     --bg-color:#111;
 
-    --big-font:4.5rem;
+    --big-font:4rem;
     --h2-font:2.6rem;
     --p-font:1.1rem;
 }
@@ -37,6 +37,8 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
 }
+
+/* HEADER */
 
 header{
     /* Fija el header en la parte superior en todo momento */
@@ -133,4 +135,66 @@ header{
     /* Aumenta el tamaño en escala. Tambien puede disminuir si se usa por debajo de 1 (ej:0.8) */
     transform: scale(1.2);
     color: var(--text-color);
+}
+
+/* HOME */
+section{
+    padding: 70px 14% 60px;
+}
+.home{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+.home-img img{
+    width: 100%;
+    height: auto;
+}
+.home-text h1{
+    font-size: var(--big-font);
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 3rem;
+}
+span{
+    color: var(--main-color);
+}
+.btn{
+    display: inline-block;
+    padding: 15px 35px;
+    background: var(--other-color);
+    color: var(--main-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 2rem;
+    transition: all 0.5s ease;
+}
+.btn i{
+    vertical-align: middle;
+    margin-left: 3px;
+    font-size: 1rem;
+}
+.btn:hover{
+    background: var(--main-color);
+    color:var(--bg-color);
+    box-shadow: 0px 1px 10px var(--main-color); 
+}
+.btn2{
+    display: inline-block;
+    margin-left: 30px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+    transition: all 0.5s ease;
+}
+
+.btn2:hover{
+    transform: scale(1.2) translateX(20px);
 }

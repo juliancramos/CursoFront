@@ -1,0 +1,136 @@
+/* Los comentarios de que hace cada función solo estarán la primera vez que salen */
+*{
+    margin: 0;
+    /* Distancia entre caja y contenido */
+    padding: 0;
+    /* Para incluir padding y borde dentro del tamaño del contenedor */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    /* Elimina puntos o numeraciones de las listas */
+    list-style: none;
+    /* Eliminar decoracion en texto (ej:enlaces) */
+    text-decoration: none;
+    /* Desplazamiento suave */
+    scroll-behavior: smooth;
+    /* Esto es para que el contenido de arriba no quede tapado por encabezados al hacer scroll */
+    /* 1rem= Una vez el tamaño de la fuente que está en la raíz
+    Usualmente es 16 */
+    /* Mejor rem para responsive */
+    scroll-padding-top: 3rem;
+}
+
+/* Valores reutilizables en todo el archivo */
+:root{
+    --main-color:#ff9f0d;
+    --text-color:#fff;
+    --other-color:#212121;
+    --second-color:#9e9e9e;
+    /* Color de fondo */
+    --bg-color:#111;
+
+    --big-font:4.5rem;
+    --h2-font:2.6rem;
+    --p-font:1.1rem;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header{
+    /* Fija el header en la parte superior en todo momento */
+    position: fixed;
+    /* Siempre ocupará todo el ancho */
+    width: 100%;
+    /* Se podrían omitir las proximas 2 ya que ya se dijo que siempre estará arriba y ocupará todo el ancho */
+    top: 0;
+    right: 0;
+    z-index: 100;
+    /* Hace que se utilice flexbox */
+    display: flex;
+    /* Centra verticalmente */
+    align-items: center;
+    /* Between lleva primer y ultimo a los extremos y deja espacio entre ellos
+    Around deja espacios iguales en todos lados */
+    justify-content: space-between;
+    background: transparent;
+    /* 30 para arriba y abajo y 14% para los costados */
+    padding: 30px 14%;
+    /* Transición suave en cambios de estilo. ease hace que empiece rápido y termine lento, pero hay más */
+    transition: all 0.5 ease;
+}
+
+.logo{
+    display: flex;
+    /* Ubica verticalmente */
+    align-items: center;
+    color: var(--text-color);
+    font-size: 33px;
+    /* Para la negrilla */
+    font-weight: 700;
+}
+
+.logo i{
+    /* Solo funciona para elementos inline-block */
+    vertical-align: middle;
+    margin-right: 8px;
+    color: var(--main-color);
+}
+
+.navlist{
+    /* Para que se pongan en horizontal. Esto es dado que el comportamiento de flex es en row(fila) */
+    display: flex;
+}
+
+.navlist a{
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 600;
+    /* 25 a los lados */
+    margin: 0 25px;
+}
+.navlist a:hover{
+    /* Para que cuando el mouse esté encima se cambie el color */
+    color: var(--main-color);
+}
+
+/* Para resaltar el enlace que está activo. Esto se cambia con JS */
+.navlist a.active{
+    color: var(--main-color);
+}
+
+.nav-icons{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: var(--main-color);
+    /* Para hacer redondo el borde */
+    border-radius: 3rem;
+    /* Aplicar sombra */
+    box-shadow: #ff9f0d 0px 1px 20px;
+}
+.nav-icons i{
+    vertical-align: middle;
+    font-size: 25px;
+    color: var(--bg-color);
+    margin-right: 8px;
+    margin-left: 5px;
+    transition: all 0.5s ease;
+}
+#menu-icon{
+    font-size: 2rem;
+    color: var(--bg-color);
+    /* Para que siempre esté por encima */
+    z-index: 1000;
+    /* Indica que el elemento es interactivo (cambiar el cursos al hacer hover) */
+    cursor: pointer;
+    /* Hace que el elemento no se muestre ni ocupe espacio. Puede ser manipulado con JS */
+    display: none;
+}
+
+.nav-icons i:hover{
+    /* Aumenta el tamaño en escala. Tambien puede disminuir si se usa por debajo de 1 (ej:0.8) */
+    transform: scale(1.2);
+    color: var(--text-color);
+}

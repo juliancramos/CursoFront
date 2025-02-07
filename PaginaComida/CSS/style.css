@@ -489,3 +489,19 @@ span{
     vertical-align: center;
     font-size: 1.5rem;
 }
+/* SCROLL BTN */
+.scroll-btn{
+    position: fixed;
+    bottom: 3.2rem;
+    border-top: 2rem;
+    right: 3.5rem;
+}
+.scroll-btn i{
+    color: var(--text-color);
+    background: var(--main-color);
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+.scroll-btn i:hover{
+    box-shadow: 0 0 20px var(--main-color);
+}

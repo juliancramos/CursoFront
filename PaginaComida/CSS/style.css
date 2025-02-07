@@ -427,3 +427,65 @@ span{
     font-size: 1.1rem;
 }
 
+/* CONTACT */
+.contact-content{
+    display: flex;
+    align-items: center;
+    /* Esto es para que cuando los elementos no tienen suficiente espacio, se muevan a la siguiente línea */
+    /* Dado que cuando no hay mucho espacio, flex por defecto lo que hace es comprimir */
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.contact-text{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.contact-text h2{
+    font-size: var(--h2-font);
+    margin-bottom: 10px;
+    color: var(--main-color);
+}
+.contact-text p{
+    font-size: var(--p-font);
+    color: var(--second-color);
+    margin-bottom: 3rem;
+    max-width: 900px;
+    line-height: 3rem;
+}
+
+.social i{
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 2rem;
+    color: var(--text-color);
+    transition: all 0.5s ease;
+}
+.social .clr i{
+    color: var(--main-color);
+}
+
+.social i:hover{
+    color: var(--main-color);
+    box-shadow: 0 0 10px;
+}
+
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 3rem;
+}
+.main-d a{
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.main-d i{
+    color: var(--main-color);
+    margin-right: 0.5rem;
+    vertical-align: center;
+    font-size: 1.5rem;
+}

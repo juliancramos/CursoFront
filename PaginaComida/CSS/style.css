@@ -116,7 +116,7 @@ header{
     vertical-align: middle;
     font-size: 25px;
     color: var(--bg-color);
-    margin-right: 8px;
+    margin-right: 5px;
     margin-left: 5px;
     transition: all 0.5s ease;
 }
@@ -139,18 +139,25 @@ header{
 
 /* HOME */
 section{
+    /* Arriba, lados, abajo */
     padding: 70px 14% 60px;
 }
 .home{
-    position: relative;
+    /* Permite que los hijos que usen absolute se posicionen dentro de el y no dentro del body */
+    position:relative;
+    /* Todo el alto y ancho de la pantalla */
     height: 100vh;
     width: 100%;
+    /* Grid para organizar en cuadricula */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    /* Centra vertical dentro del grid */
     align-items: center;
+    /* Espacio entre filas y columnas dentro del grid */
     gap: 2rem;
 }
 .home-img img{
+    /* La altura se ajusta según el ancho */
     width: 100%;
     height: auto;
 }
@@ -197,4 +204,51 @@ span{
 
 .btn2:hover{
     transform: scale(1.2) translateX(20px);
+}
+/* CONTAINER */
+.container{
+    padding: 30px 14% 70px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    gap: 2rem;
+    text-align: center;
+}
+
+.container-box{
+    padding: 2rem;
+    background: var(--other-color);
+    border-radius: 3rem;
+    transition: all 0.5s ease;
+}
+.container-box:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform:  translateX(2px) translateY(-7px);
+}
+/* Cuando se para sobre el container, cambia el color de a */
+.container-box:hover a{
+    color: var(--bg-color);
+}
+.container-box img{
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 5px;
+}
+.container-box h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0 1rem;
+}
+.container-box a{
+    color: var(--second-color);
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size:var(--p-font);
+    transition: all 0.5s ease;
+}
+.container-box a:hover{
+    color: var(--text-color);
+    border-bottom: 3px solid var(--text-color);
+    
 }

@@ -62,6 +62,11 @@ header{
     /* Transición suave en cambios de estilo. ease hace que empiece rápido y termine lento, pero hay más */
     transition: all 0.5 ease;
 }
+/* //Para cambiar el color al hacer scroll */
+header.sticky{
+    padding: 12px 14%;
+    background: var(--other-color);
+}
 
 .logo{
     display: flex;
@@ -504,4 +509,69 @@ span{
 }
 .scroll-btn i:hover{
     box-shadow: 0 0 20px var(--main-color);
+}
+
+/* MEDIA */
+@media(max-width:1545px){
+    header{
+        padding: 22px 4%;
+        transition: .2s;
+    }
+    header.sticky{
+        padding: 14px 4%;
+        transition: .2s;
+    }
+    section{
+        padding: 50px 4% 40px;
+        transition: .2s;
+    }
+    .container{
+        padding: 30px 4% 50px;
+    }
+}
+
+@media(max-width:1180px){
+    :root{
+        --big-font:3.5rem;
+        --h2-font:2.2rem;
+        --p-font:1rem;
+    }
+    .home{
+        height: 85vh;
+    }
+}
+@media(max-width:1040px){
+    .home-img img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+    .about-img img{
+        width: 100%;
+        max-width: 490px;
+        height: auto;
+    }
+    #menu-icon{
+        display: initial;
+    }
+    .navlist{
+        position: absolute;
+        top: -1000px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--other-color);
+        transition: all 0.5s ease;
+    }
+    .navlist a{
+        display: block;
+        padding: 0.5rem;
+        margin: 1rem;
+        border-left: 2px solid var(--main-color);
+    }
+    .navlist.open{
+        top: 100%;
+    }
 }
